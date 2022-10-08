@@ -30,7 +30,7 @@ const DivTop = styled.div`
   height: 100%;
   background-image: url(${background});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100vw 100vh;
   border-radius: 0px 0px 50px 50px;
 `;
 

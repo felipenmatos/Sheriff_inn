@@ -16,7 +16,7 @@ function SlideText() {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  width: 908px;
+  width: 650px;
   height: 400px;
   margin-top: 20px;
   margin-left: 100px;
@@ -35,8 +35,8 @@ const Column = styled.div`
 
 const Text = styled.h1`
   font-style: normal;
-  font-weight: 400;
-  font-size: 85px;
+  font-weight: 700;
+  font-size: 60px;
   line-height: 120px;
   color: #ffffff;
 `;
