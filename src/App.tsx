@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import background from "./assets/morrosp.jpg";
+import Header from "./components/Header/Header";
+import SlideText from "./components/SlideText/SlideText";
+import Search from "./components/Search/Search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <DivTop>
+        <Header />
+        <SlideText />
+        <Center>
+          <Search />
+        </Center>
+      </DivTop>
+      <Body></Body>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
+
+const DivTop = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 0px 0px 50px 50px;
+`;
+
+const Body = styled.div`
+  height: 100vh;
+  background-color: #f2fffe;
+`;
+
+const Center = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
 export default App;
