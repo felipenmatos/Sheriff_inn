@@ -4,7 +4,6 @@ import styled from "styled-components";
 function SlideText() {
   return (
     <Container>
-      <Line />
       <Column>
         <Text>Venha conhecer Morro de São Paulo</Text>
         <Button>SAIBA MAIS</Button>
@@ -42,14 +41,14 @@ const Text = styled.h1`
 `;
 
 const Button = styled.button`
-  width: 190px;
-  height: 55px;
+  width: 180px;
+  height: 63px;
   margin-top: -20px;
   background: #fff8f8;
   border-radius: 10px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #000000;
   border: none;

@@ -75,14 +75,14 @@ const InputNumber = styled.input`
 `;
 
 const Button = styled.button`
-  width: 199px;
+  width: 180px;
   height: 65px;
   background: #b4cbfb;
   border-radius: 10px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 28px;
   color: #ffffff;
   border: none;
   cursor: pointer;

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import background from "./assets/morrosp.jpg";
+import background from "./assets/Background.png";
 import Header from "./components/Header/Header";
 import SlideText from "./components/SlideText/SlideText";
 import Search from "./components/Search/Search";
+import BodyTop from "./components/BodyTop/BodyTop";
 
 function App() {
   return (
@@ -15,14 +16,19 @@ function App() {
           <Search />
         </Center>
       </DivTop>
-      <Body></Body>
+      <Body>
+        <BodyTop />
+      </Body>
     </Container>
   );
 }
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100% 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2fffe;
 `;
 
 const DivTop = styled.div`
@@ -36,7 +42,6 @@ const DivTop = styled.div`
 
 const Body = styled.div`
   height: 100vh;
-  background-color: #f2fffe;
 `;
 
 const Center = styled.div`
