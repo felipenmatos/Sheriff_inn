@@ -98,6 +98,11 @@ const Button = styled.button`
   color: #ffffff;
   border: none;
   cursor: pointer;
+
+  :hover {
+    background: #b4cbfb;
+    color: #4c89bc;
+  }
 `;
 
 export default BodyTop;
